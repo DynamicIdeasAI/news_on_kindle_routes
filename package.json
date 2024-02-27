@@ -1,5 +1,5 @@
 {
-  "name": "@dynamicideas/package-name",
+  "name": "@dynamicideas/news-on-kindle-routes",
   "version": "0.8.0",
   "description": "API routes.",
   "main": "dist/index.js",
