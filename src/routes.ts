@@ -1,3 +1,4 @@
+import { CategoryRouteType } from './type/category.type';
 import type { ChannelRouteType } from './type/channel.type';
 
 export default class ApiRoute {
@@ -7,15 +8,28 @@ export default class ApiRoute {
     post: {
       data: {
         title: '',
-        url: '',
-        createdAt: undefined
+        url: ''
       }
     },
     put: {
       data: {
         title: '',
-        url: '',
-        createdAt: undefined
+        url: ''
+      }
+    },
+    delete: { ids: [] }
+  };
+  static Category: CategoryRouteType = {
+    path: '/categories',
+    get: { pageIndex: 0, pageSize: 200 },
+    post: {
+      data: {
+        name: ''
+      }
+    },
+    put: {
+      data: {
+        name: ''
       }
     },
     delete: { ids: [] }
