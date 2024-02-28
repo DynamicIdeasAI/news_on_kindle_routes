@@ -3,6 +3,9 @@ import type { ChannelDataType } from '@dynamicideas/news-on-kindle-data-types';
 
 interface ChannelRouteType extends BaseRouteType {
   get: ChannelGetRequestType;
+  post: ChannelPostRequestType;
+  put: ChannelPutRequestType;
+  delete: ChannelDeleteRequestType;
 }
 
 interface ChannelGetRequestType extends BaseRequestType {
@@ -33,9 +36,7 @@ interface ChannelDeleteRequestType extends BaseRequestType {
   ids: string[];
 }
 
-interface ChannelDeleteResponseType extends BaseResponseType {
-  ids: string[];
-}
+interface ChannelDeleteResponseType extends BaseResponseType {}
 
 export type {
   ChannelRouteType,
