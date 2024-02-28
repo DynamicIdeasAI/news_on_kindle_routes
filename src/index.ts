@@ -1,2 +1,2 @@
 export * from './routes';
-export * from './type/demo.type';
+export * from './type/channel.type';
