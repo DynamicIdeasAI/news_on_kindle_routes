@@ -9,7 +9,12 @@ interface ChannelRouteType extends BaseRouteType {
 }
 
 interface ChannelGetRequestType extends BaseRequestType {
-  ids: string[];
+  /**
+   * Page index, starting from 0.
+   */
+  pageIndex: number;
+  pageSize: number;
+  ids?: string[];
 }
 
 interface ChannelGetResponseType extends BaseResponseType {
