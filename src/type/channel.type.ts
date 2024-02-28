@@ -43,7 +43,9 @@ interface ChannelDeleteRequestType extends BaseRequestType {
   ids: string[];
 }
 
-interface ChannelDeleteResponseType extends BaseResponseType {}
+interface ChannelDeleteResponseType extends BaseResponseType {
+  data: ChannelDataType[];
+}
 
 export type {
   ChannelRouteType,
