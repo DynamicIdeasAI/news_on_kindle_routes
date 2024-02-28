@@ -14,6 +14,8 @@ interface ChannelGetRequestType extends BaseRequestType {
    */
   pageIndex: number;
   pageSize: number;
+  isPublished?: boolean;
+  isDeleted?: boolean;
   ids?: string[];
 }
 
