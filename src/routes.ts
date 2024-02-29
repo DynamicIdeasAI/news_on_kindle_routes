@@ -1,7 +1,22 @@
 import { CategoryRouteType } from './type/category.type';
-import type { ChannelRouteType } from './type/channel.type';
+import type { ChannelRouteType, ChannelSubscriptionRouteType } from './type/channel.type';
 
 export default class ApiRoute {
+  static Category: CategoryRouteType = {
+    path: '/categories',
+    get: { pageIndex: 0, pageSize: 200 },
+    post: {
+      data: {
+        name: ''
+      }
+    },
+    put: {
+      data: {
+        name: ''
+      }
+    },
+    delete: { ids: [] }
+  };
   static Channel: ChannelRouteType = {
     path: '/channels',
     get: { pageIndex: 0, pageSize: 20 },
@@ -19,17 +34,19 @@ export default class ApiRoute {
     },
     delete: { ids: [] }
   };
-  static Category: CategoryRouteType = {
-    path: '/categories',
+  static ChannelSubscription: ChannelSubscriptionRouteType = {
+    path: '/channel-subscriptions',
     get: { pageIndex: 0, pageSize: 200 },
     post: {
       data: {
-        name: ''
+        channelId: '',
+        userId: ''
       }
     },
     put: {
       data: {
-        name: ''
+        channelId: '',
+        userId: ''
       }
     },
     delete: { ids: [] }
