@@ -36,7 +36,7 @@ export default class ApiRoute {
   };
   static ChannelSubscription: ChannelSubscriptionRouteType = {
     path: '/channel-subscriptions',
-    get: { pageIndex: 0, pageSize: 200 },
+    get: { pageIndex: 0, pageSize: 20, userId: '' },
     post: {
       data: {
         channelId: '',
