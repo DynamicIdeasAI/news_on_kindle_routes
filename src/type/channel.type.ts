@@ -135,9 +135,7 @@ interface ChannelSubscriptionDeleteRequestType extends BaseRequestType {
   ids: string[];
 }
 
-interface ChannelSubscriptionDeleteResponseType extends BaseResponseType {
-  data: ChannelSubscriptionDataType[];
-}
+interface ChannelSubscriptionDeleteResponseType extends BaseResponseType {}
 
 export type {
   ChannelRouteType,
