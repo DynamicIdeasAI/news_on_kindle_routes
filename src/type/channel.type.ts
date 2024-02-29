@@ -107,6 +107,7 @@ interface ChannelSubscriptionGetRequestType extends BaseRequestType {
   pageIndex: number;
   pageSize: number;
   isDeleted?: boolean;
+  userId?: string;
   ids?: string[];
 }
 
