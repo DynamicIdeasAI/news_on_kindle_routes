@@ -144,7 +144,7 @@ interface ChannelUrlExistenceGetRequestType extends BaseRequestType {
 }
 
 interface ChannelUrlExistenceGetResponseType extends BaseResponseType {
-  exists: boolean;
+  data: { exists: boolean };
 }
 
 export type {
