@@ -135,6 +135,18 @@ interface ChannelSubscriptionDeleteRequestType extends BaseRequestType {
 
 interface ChannelSubscriptionDeleteResponseType extends BaseResponseType {}
 
+interface ChannelUrlExistenceRouteType extends BaseRouteType {
+  get: ChannelUrlExistenceGetRequestType;
+}
+
+interface ChannelUrlExistenceGetRequestType extends BaseRequestType {
+  url: string;
+}
+
+interface ChannelUrlExistenceGetResponseType extends BaseResponseType {
+  exists: boolean;
+}
+
 export type {
   ChannelRouteType,
   ChannelGetRequestType,
@@ -153,5 +165,8 @@ export type {
   ChannelSubscriptionPutRequestType,
   ChannelSubscriptionPutResponseType,
   ChannelSubscriptionDeleteRequestType,
-  ChannelSubscriptionDeleteResponseType
+  ChannelSubscriptionDeleteResponseType,
+  ChannelUrlExistenceRouteType,
+  ChannelUrlExistenceGetRequestType,
+  ChannelUrlExistenceGetResponseType
 };

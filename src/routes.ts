@@ -1,5 +1,5 @@
 import { CategoryRouteType } from './type/category.type';
-import type { ChannelRouteType, ChannelSubscriptionRouteType } from './type/channel.type';
+import type { ChannelRouteType, ChannelSubscriptionRouteType, ChannelUrlExistenceRouteType } from './type/channel.type';
 
 export default class ApiRoute {
   static Category: CategoryRouteType = {
@@ -50,5 +50,9 @@ export default class ApiRoute {
       }
     },
     delete: { ids: [] }
+  };
+  static ChannelUrlExistence: ChannelUrlExistenceRouteType = {
+    path: '/check-channel-url-existence',
+    get: { url: '' }
   };
 }
