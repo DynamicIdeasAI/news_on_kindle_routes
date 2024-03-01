@@ -48,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "@dynamicideas/base-types": "^0.8.15",
+    "@dynamicideas/base-types": "^0.8.16",
     "@dynamicideas/news-on-kindle-data-types": "^0.8.8"
   },
   "devDependencies": {
