@@ -147,18 +147,6 @@ interface ChannelUrlExistenceGetResponseType extends BaseResponseType {
   data: { exists: boolean };
 }
 
-interface ChannelSubmitRouteType extends BaseRouteType {
-  post: ChannelSubmitPostRequestType;
-}
-
-interface ChannelSubmitPostRequestType extends BaseRequestType {
-  channel: ChannelDataType;
-}
-
-interface ChannelSubmitPostResponseType extends BaseResponseType {
-  data: ChannelDataType;
-}
-
 export type {
   ChannelRouteType,
   ChannelGetRequestType,
@@ -180,8 +168,5 @@ export type {
   ChannelSubscriptionDeleteResponseType,
   ChannelUrlExistenceRouteType,
   ChannelUrlExistenceGetRequestType,
-  ChannelUrlExistenceGetResponseType,
-  ChannelSubmitRouteType,
-  ChannelSubmitPostRequestType,
-  ChannelSubmitPostResponseType
+  ChannelUrlExistenceGetResponseType
 };
