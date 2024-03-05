@@ -14,7 +14,7 @@ interface PostGetRequestType extends BaseRequestType {
    */
   pageIndex: number;
   pageSize: number;
-  channelId?: string;
+  channelIds?: string[];
   ids?: string[];
   isDeleted?: boolean;
 }
