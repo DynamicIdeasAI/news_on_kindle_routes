@@ -6,6 +6,7 @@ import type {
   ChannelUrlExistenceRouteType
 } from './type/channel.type';
 import type { PostRouteType } from './type/post.type';
+import { RssRouteType } from './type/rss.type';
 
 export default class ApiRoute {
   static Category: CategoryRouteType = {
@@ -87,5 +88,9 @@ export default class ApiRoute {
       }
     },
     delete: { ids: [] }
+  };
+  static Rss: RssRouteType = {
+    path: '/rss',
+    get: { rssUrl: '' }
   };
 }
