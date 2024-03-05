@@ -147,6 +147,18 @@ interface ChannelUrlExistenceGetResponseType extends BaseResponseType {
   data: { exists: boolean };
 }
 
+interface ChannelRssUrlExistenceRouteType extends BaseRouteType {
+  get: ChannelRssUrlExistenceGetRequestType;
+}
+
+interface ChannelRssUrlExistenceGetRequestType extends BaseRequestType {
+  rssUrl: string;
+}
+
+interface ChannelRssUrlExistenceGetResponseType extends BaseResponseType {
+  data: { exists: boolean };
+}
+
 export type {
   ChannelRouteType,
   ChannelGetRequestType,
@@ -168,5 +180,8 @@ export type {
   ChannelSubscriptionDeleteResponseType,
   ChannelUrlExistenceRouteType,
   ChannelUrlExistenceGetRequestType,
-  ChannelUrlExistenceGetResponseType
+  ChannelUrlExistenceGetResponseType,
+  ChannelRssUrlExistenceRouteType,
+  ChannelRssUrlExistenceGetRequestType,
+  ChannelRssUrlExistenceGetResponseType
 };
