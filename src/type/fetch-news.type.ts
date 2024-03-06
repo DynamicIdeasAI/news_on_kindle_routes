@@ -11,7 +11,7 @@ interface FetchNewsGetRequestType extends BaseRequestType {
 }
 
 interface FetchNewsGetResponseType extends BaseResponseType {
-  post: PostDataType;
+  data: PostDataType;
 }
 
 export type { FetchNewsRouteType, FetchNewsGetRequestType, FetchNewsGetResponseType };
