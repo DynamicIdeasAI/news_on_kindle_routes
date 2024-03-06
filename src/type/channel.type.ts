@@ -1,5 +1,9 @@
 import type { BaseRouteType, BaseRequestType, BaseResponseType } from '@dynamicideas/base-types';
-import type { ChannelDataType, ChannelSubscriptionDataType } from '@dynamicideas/news-on-kindle-data-types';
+import type {
+  ChannelDataType,
+  ChannelDomParserDataType,
+  ChannelSubscriptionDataType
+} from '@dynamicideas/news-on-kindle-data-types';
 
 interface ChannelRouteType extends BaseRouteType {
   get: ChannelGetRequestType;
@@ -159,6 +163,48 @@ interface ChannelRssUrlExistenceGetResponseType extends BaseResponseType {
   data: { exists: boolean };
 }
 
+interface ChannelDomParserRouteType extends BaseRouteType {
+  get: ChannelDomParserGetRequestType;
+  post: ChannelDomParserPostRequestType;
+  put: ChannelDomParserPutRequestType;
+  delete: ChannelDomParserDeleteRequestType;
+}
+
+interface ChannelDomParserGetRequestType extends BaseRequestType {
+  channelId?: string;
+  ids?: string[];
+  pageIndex?: number;
+  pageSize?: number;
+}
+
+interface ChannelDomParserGetResponseType extends BaseResponseType {
+  data: ChannelDomParserDataType[];
+}
+
+interface ChannelDomParserPostRequestType extends BaseRequestType {
+  data: ChannelDomParserDataType;
+}
+
+interface ChannelDomParserPostResponseType extends BaseResponseType {
+  data: ChannelDomParserDataType;
+}
+
+interface ChannelDomParserPutRequestType extends BaseRequestType {
+  data: ChannelDomParserDataType;
+}
+
+interface ChannelDomParserPutResponseType extends BaseResponseType {
+  data: ChannelDomParserDataType;
+}
+
+interface ChannelDomParserDeleteRequestType extends BaseRequestType {
+  ids: string[];
+}
+
+interface ChannelDomParserDeleteResponseType extends BaseResponseType {
+  data: ChannelDomParserDataType[];
+}
+
 export type {
   ChannelRouteType,
   ChannelGetRequestType,
@@ -183,5 +229,14 @@ export type {
   ChannelUrlExistenceGetResponseType,
   ChannelRssUrlExistenceRouteType,
   ChannelRssUrlExistenceGetRequestType,
-  ChannelRssUrlExistenceGetResponseType
+  ChannelRssUrlExistenceGetResponseType,
+  ChannelDomParserRouteType,
+  ChannelDomParserGetRequestType,
+  ChannelDomParserGetResponseType,
+  ChannelDomParserPostRequestType,
+  ChannelDomParserPostResponseType,
+  ChannelDomParserPutRequestType,
+  ChannelDomParserPutResponseType,
+  ChannelDomParserDeleteRequestType,
+  ChannelDomParserDeleteResponseType
 };
