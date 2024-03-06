@@ -6,8 +6,9 @@ import type {
   ChannelSubscriptionRouteType,
   ChannelUrlExistenceRouteType
 } from './type/channel.type';
+import type { FetchNewsRouteType } from './type/fetch-news.type';
 import type { PostRouteType } from './type/post.type';
-import { RssRouteType } from './type/rss.type';
+import type { RssRouteType } from './type/rss.type';
 
 export default class ApiRoute {
   static Category: CategoryRouteType = {
@@ -112,5 +113,9 @@ export default class ApiRoute {
   static Rss: RssRouteType = {
     path: '/rss',
     get: { rssUrl: '' }
+  };
+  static FetchNews: FetchNewsRouteType = {
+    path: '/fetch-news',
+    get: { channelId: '', newsUrl: '' }
   };
 }
