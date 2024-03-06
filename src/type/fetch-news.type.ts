@@ -2,16 +2,16 @@ import type { BaseRequestType, BaseResponseType, BaseRouteType } from '@dynamici
 import type { PostDataType } from '@dynamicideas/news-on-kindle-data-types';
 
 interface FetchNewsRouteType extends BaseRouteType {
-  get: FetchNewsRouteRequestType;
+  get: FetchNewsGetRequestType;
 }
 
-interface FetchNewsRouteRequestType extends BaseRequestType {
+interface FetchNewsGetRequestType extends BaseRequestType {
   channelId: string;
   newsUrl: string;
 }
 
-interface FetchNewsRouteResponseType extends BaseResponseType {
+interface FetchNewsGetResponseType extends BaseResponseType {
   post: PostDataType;
 }
 
-export type { FetchNewsRouteType, FetchNewsRouteRequestType, FetchNewsRouteResponseType };
+export type { FetchNewsRouteType, FetchNewsGetRequestType, FetchNewsGetResponseType };
