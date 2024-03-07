@@ -16,8 +16,8 @@ interface ChannelGetRequestType extends BaseRequestType {
   /**
    * Page index, starting from 0.
    */
-  pageIndex?: number;
-  pageSize?: number;
+  pageIndex: number;
+  pageSize: number;
   isPublished?: boolean;
   isDeleted?: boolean;
   ids?: string[];
@@ -62,8 +62,8 @@ interface ChannelSubscriptionGetRequestType extends BaseRequestType {
   /**
    * Page index, starting from 0.
    */
-  pageIndex?: number;
-  pageSize?: number;
+  pageIndex: number;
+  pageSize: number;
   userId?: string;
 }
 
@@ -127,8 +127,8 @@ interface ChannelDomParserRouteType extends BaseRouteType {
 interface ChannelDomParserGetRequestType extends BaseRequestType {
   channelId?: string;
   ids?: string[];
-  pageIndex?: number;
-  pageSize?: number;
+  pageIndex: number;
+  pageSize: number;
 }
 
 interface ChannelDomParserGetResponseType extends BaseResponseType {
