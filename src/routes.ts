@@ -1,6 +1,6 @@
 import type { CategoryRouteType } from './type/category.type';
 import type {
-  ChannelDomParserRouteType,
+  ChannelNewsParserRouteType,
   ChannelRouteType,
   ChannelRssUrlExistenceRouteType,
   ChannelSubscriptionRouteType,
@@ -68,8 +68,8 @@ export default class ApiRoute {
     path: '/check-channel-rss-url-existence',
     get: { rssUrl: '' }
   };
-  static ChannelDomParser: ChannelDomParserRouteType = {
-    path: '/channel-dom-parsers',
+  static ChannelNewsParser: ChannelNewsParserRouteType = {
+    path: '/channel-news-parsers',
     get: { pageIndex: 0, pageSize: 20 },
     post: {
       data: {

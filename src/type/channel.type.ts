@@ -117,45 +117,45 @@ interface ChannelRssUrlExistenceGetResponseType extends BaseResponseType {
   data: { exists: boolean };
 }
 
-interface ChannelDomParserRouteType extends BaseRouteType {
-  get: ChannelDomParserGetRequestType;
-  post: ChannelDomParserPostRequestType;
-  put: ChannelDomParserPutRequestType;
-  delete: ChannelDomParserDeleteRequestType;
+interface ChannelNewsParserRouteType extends BaseRouteType {
+  get: ChannelNewsParserGetRequestType;
+  post: ChannelNewsParserPostRequestType;
+  put: ChannelNewsParserPutRequestType;
+  delete: ChannelNewsParserDeleteRequestType;
 }
 
-interface ChannelDomParserGetRequestType extends BaseRequestType {
+interface ChannelNewsParserGetRequestType extends BaseRequestType {
   channelId?: string;
   ids?: string[];
   pageIndex: number;
   pageSize: number;
 }
 
-interface ChannelDomParserGetResponseType extends BaseResponseType {
+interface ChannelNewsParserGetResponseType extends BaseResponseType {
   data: ChannelNewsParserDataType[];
 }
 
-interface ChannelDomParserPostRequestType extends BaseRequestType {
+interface ChannelNewsParserPostRequestType extends BaseRequestType {
   data: ChannelNewsParserDataType;
 }
 
-interface ChannelDomParserPostResponseType extends BaseResponseType {
+interface ChannelNewsParserPostResponseType extends BaseResponseType {
   data: ChannelNewsParserDataType;
 }
 
-interface ChannelDomParserPutRequestType extends BaseRequestType {
+interface ChannelNewsParserPutRequestType extends BaseRequestType {
   data: ChannelNewsParserDataType;
 }
 
-interface ChannelDomParserPutResponseType extends BaseResponseType {
+interface ChannelNewsParserPutResponseType extends BaseResponseType {
   data: ChannelNewsParserDataType;
 }
 
-interface ChannelDomParserDeleteRequestType extends BaseRequestType {
+interface ChannelNewsParserDeleteRequestType extends BaseRequestType {
   ids: string[];
 }
 
-interface ChannelDomParserDeleteResponseType extends BaseResponseType {
+interface ChannelNewsParserDeleteResponseType extends BaseResponseType {
   data: ChannelNewsParserDataType[];
 }
 
@@ -184,13 +184,13 @@ export type {
   ChannelRssUrlExistenceRouteType,
   ChannelRssUrlExistenceGetRequestType,
   ChannelRssUrlExistenceGetResponseType,
-  ChannelDomParserRouteType,
-  ChannelDomParserGetRequestType,
-  ChannelDomParserGetResponseType,
-  ChannelDomParserPostRequestType,
-  ChannelDomParserPostResponseType,
-  ChannelDomParserPutRequestType,
-  ChannelDomParserPutResponseType,
-  ChannelDomParserDeleteRequestType,
-  ChannelDomParserDeleteResponseType
+  ChannelNewsParserRouteType,
+  ChannelNewsParserGetRequestType,
+  ChannelNewsParserGetResponseType,
+  ChannelNewsParserPostRequestType,
+  ChannelNewsParserPostResponseType,
+  ChannelNewsParserPutRequestType,
+  ChannelNewsParserPutResponseType,
+  ChannelNewsParserDeleteRequestType,
+  ChannelNewsParserDeleteResponseType
 };
