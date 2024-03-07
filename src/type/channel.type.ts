@@ -1,7 +1,7 @@
 import type { BaseRouteType, BaseRequestType, BaseResponseType } from '@dynamicideas/base-types';
 import type {
   ChannelDataType,
-  ChannelDomParserDataType,
+  ChannelNewsParserDataType,
   ChannelSubscriptionDataType
 } from '@dynamicideas/news-on-kindle-data-types';
 
@@ -132,23 +132,23 @@ interface ChannelDomParserGetRequestType extends BaseRequestType {
 }
 
 interface ChannelDomParserGetResponseType extends BaseResponseType {
-  data: ChannelDomParserDataType[];
+  data: ChannelNewsParserDataType[];
 }
 
 interface ChannelDomParserPostRequestType extends BaseRequestType {
-  data: ChannelDomParserDataType;
+  data: ChannelNewsParserDataType;
 }
 
 interface ChannelDomParserPostResponseType extends BaseResponseType {
-  data: ChannelDomParserDataType;
+  data: ChannelNewsParserDataType;
 }
 
 interface ChannelDomParserPutRequestType extends BaseRequestType {
-  data: ChannelDomParserDataType;
+  data: ChannelNewsParserDataType;
 }
 
 interface ChannelDomParserPutResponseType extends BaseResponseType {
-  data: ChannelDomParserDataType;
+  data: ChannelNewsParserDataType;
 }
 
 interface ChannelDomParserDeleteRequestType extends BaseRequestType {
@@ -156,7 +156,7 @@ interface ChannelDomParserDeleteRequestType extends BaseRequestType {
 }
 
 interface ChannelDomParserDeleteResponseType extends BaseResponseType {
-  data: ChannelDomParserDataType[];
+  data: ChannelNewsParserDataType[];
 }
 
 export type {

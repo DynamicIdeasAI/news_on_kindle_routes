@@ -74,15 +74,15 @@ export default class ApiRoute {
     post: {
       data: {
         channelId: '',
-        titleSelector: '',
-        contentSelector: ''
+        titleCssSelector: '',
+        contentCssSelector: ''
       }
     },
     put: {
       data: {
         channelId: '',
-        titleSelector: '',
-        contentSelector: ''
+        titleCssSelector: '',
+        contentCssSelector: ''
       }
     },
     delete: { ids: [] }
