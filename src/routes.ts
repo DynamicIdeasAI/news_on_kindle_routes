@@ -123,7 +123,7 @@ export default class ApiRoute {
     path: '/emails',
     post: {
       data: {
-        from: '',
+        fromEmail: '',
         toUserId: '',
         toUserKindleEmail: ''
       }
