@@ -1,6 +1,6 @@
 {
   "name": "@dynamicideas/news-on-kindle-routes",
-  "version": "0.8.35",
+  "version": "0.8.36",
   "description": "API routes.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@dynamicideas/base-types": "^0.8.16",
-    "@dynamicideas/news-on-kindle-data-types": "^0.8.20"
+    "@dynamicideas/news-on-kindle-data-types": "^0.8.21"
   },
   "devDependencies": {
     "@commitlint/cli": "19.0.3",
