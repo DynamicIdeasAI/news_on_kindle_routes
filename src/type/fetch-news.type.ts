@@ -14,4 +14,21 @@ interface FetchNewsGetResponseType extends BaseResponseType {
   data: PostDataType;
 }
 
-export type { FetchNewsRouteType, FetchNewsGetRequestType, FetchNewsGetResponseType };
+interface FetchAllNewsRouteType extends BaseRouteType {
+  get: FetchAllNewsGetRequestType;
+}
+
+interface FetchAllNewsGetRequestType extends BaseRequestType {}
+
+interface FetchAllNewsGetResponseType extends BaseResponseType {
+  data: { channelId?: PostDataType[] };
+}
+
+export type {
+  FetchNewsRouteType,
+  FetchNewsGetRequestType,
+  FetchNewsGetResponseType,
+  FetchAllNewsRouteType,
+  FetchAllNewsGetRequestType,
+  FetchAllNewsGetResponseType
+};

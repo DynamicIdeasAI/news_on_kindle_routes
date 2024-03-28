@@ -7,7 +7,7 @@ import type {
   ChannelUrlExistenceRouteType
 } from './type/channel.type';
 import type { EmailRouteType } from './type/email.type';
-import type { FetchNewsRouteType } from './type/fetch-news.type';
+import type { FetchAllNewsRouteType, FetchNewsRouteType } from './type/fetch-news.type';
 import type { PostRouteType } from './type/post.type';
 import type { RssRouteType } from './type/rss.type';
 
@@ -118,6 +118,10 @@ export default class ApiRoute {
   static FetchNews: FetchNewsRouteType = {
     path: '/fetch-news',
     get: { channelId: '', newsUrl: '' }
+  };
+  static FetchAllNews: FetchAllNewsRouteType = {
+    path: '/fetch-all-news',
+    get: {}
   };
   static Email: EmailRouteType = {
     path: '/emails',
