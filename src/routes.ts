@@ -115,11 +115,11 @@ export default class ApiRoute {
     path: '/rss',
     get: { rssUrl: '' }
   };
-  static FetchNews: FetchChannelNewsRouteType = {
+  static FetchChannelNews: FetchChannelNewsRouteType = {
     path: '/fetch-channel-news',
     get: { channelId: '' }
   };
-  static FetchAllNews: FetchAllChannelNewsRouteType = {
+  static FetchAllChannelNews: FetchAllChannelNewsRouteType = {
     path: '/fetch-all-channel-news',
     get: {}
   };
