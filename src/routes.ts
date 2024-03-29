@@ -9,7 +9,7 @@ import type {
 } from './type/channel.type';
 import type { EmailRouteType } from './type/email.type';
 import type { FetchAllChannelNewsRouteType, FetchChannelNewsRouteType } from './type/fetch-channel-news.type';
-import type { PostRouteType } from './type/post.type';
+import type { ClearExpiredPostRouteType, PostRouteType } from './type/post.type';
 import type { RssRouteType } from './type/rss.type';
 
 export default class ApiRoute {
@@ -117,6 +117,10 @@ export default class ApiRoute {
       }
     },
     delete: { ids: [] }
+  };
+  static ClearExipredPost: ClearExpiredPostRouteType = {
+    path: '/clear-expired-posts',
+    delete: {}
   };
   static Rss: RssRouteType = {
     path: '/rss',
