@@ -118,7 +118,7 @@ export default class ApiRoute {
     },
     delete: { ids: [] }
   };
-  static ClearExipredPost: ClearExpiredPostRouteType = {
+  static ClearExpiredPost: ClearExpiredPostRouteType = {
     path: '/clear-expired-posts',
     delete: {}
   };
