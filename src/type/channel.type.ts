@@ -66,6 +66,7 @@ interface ChannelSubscriptionGetRequestType extends BaseRequestType {
   pageIndex: number;
   pageSize: number;
   userId?: string;
+  channelIds?: string[];
 }
 
 interface ChannelSubscriptionGetResponseType extends BaseResponseType {
