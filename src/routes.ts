@@ -33,13 +33,15 @@ export default class ApiRoute {
     post: {
       data: {
         title: '',
-        url: ''
+        url: '',
+        refreshIndex: 0
       }
     },
     put: {
       data: {
         title: '',
-        url: ''
+        url: '',
+        refreshIndex: 0
       }
     },
     delete: { ids: [] }
