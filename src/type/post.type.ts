@@ -45,6 +45,14 @@ interface PostDeleteResponseType extends BaseResponseType {
   data: PostDataType[];
 }
 
+interface ClearExpiredPostRouteType extends BaseRouteType {
+  delete: ClearExpiredPostDeleteRequestType;
+}
+
+interface ClearExpiredPostDeleteRequestType extends BaseRequestType {}
+
+interface ClearExpiredPostDeleteResponseType extends BaseResponseType {}
+
 export type {
   PostRouteType,
   PostGetRequestType,
@@ -54,5 +62,8 @@ export type {
   PostPutRequestType,
   PostPutResponseType,
   PostDeleteRequestType,
-  PostDeleteResponseType
+  PostDeleteResponseType,
+  ClearExpiredPostRouteType,
+  ClearExpiredPostDeleteRequestType,
+  ClearExpiredPostDeleteResponseType
 };
