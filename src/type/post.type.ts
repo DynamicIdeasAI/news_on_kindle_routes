@@ -9,13 +9,11 @@ interface PostRouteType extends BaseRouteType {
 }
 
 interface PostGetRequestType extends BaseRequestType {
-  /**
-   * Page index, starting from 0.
-   */
   pageIndex: number;
   pageSize: number;
   channelIds?: string[];
   ids?: string[];
+  url?: string;
   isDeleted?: boolean;
 }
 
