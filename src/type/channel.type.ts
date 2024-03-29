@@ -160,6 +160,16 @@ interface ChannelNewsParserDeleteResponseType extends BaseResponseType {
   data: ChannelNewsParserDataType[];
 }
 
+interface ChannelTotalAmountRouteType extends BaseRouteType {
+  get: ChannelTotalAmountGetRequestType;
+}
+
+interface ChannelTotalAmountGetRequestType extends BaseRequestType {}
+
+interface ChannelTotalAmountGetResponseType extends BaseResponseType {
+  data: { totalPublishedAmount: number; totalUnpublishedAmount: number; totalDeletedAmount: number };
+}
+
 export type {
   ChannelRouteType,
   ChannelGetRequestType,
@@ -193,5 +203,8 @@ export type {
   ChannelNewsParserPutRequestType,
   ChannelNewsParserPutResponseType,
   ChannelNewsParserDeleteRequestType,
-  ChannelNewsParserDeleteResponseType
+  ChannelNewsParserDeleteResponseType,
+  ChannelTotalAmountRouteType,
+  ChannelTotalAmountGetRequestType,
+  ChannelTotalAmountGetResponseType
 };

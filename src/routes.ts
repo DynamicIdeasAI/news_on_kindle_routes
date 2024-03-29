@@ -4,6 +4,7 @@ import type {
   ChannelRouteType,
   ChannelRssUrlExistenceRouteType,
   ChannelSubscriptionRouteType,
+  ChannelTotalAmountRouteType,
   ChannelUrlExistenceRouteType
 } from './type/channel.type';
 import type { EmailRouteType } from './type/email.type';
@@ -89,6 +90,10 @@ export default class ApiRoute {
       }
     },
     delete: { ids: [] }
+  };
+  static ChannelTotalAmount: ChannelTotalAmountRouteType = {
+    path: '/channel-total-amount',
+    get: {}
   };
   static Post: PostRouteType = {
     path: '/posts',
