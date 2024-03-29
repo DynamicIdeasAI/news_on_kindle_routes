@@ -17,7 +17,9 @@ interface FetchAllChannelNewsRouteType extends BaseRouteType {
   get: FetchAllChannelNewsGetRequestType;
 }
 
-interface FetchAllChannelNewsGetRequestType extends BaseRequestType {}
+interface FetchAllChannelNewsGetRequestType extends BaseRequestType {
+  refreshIndex?: number;
+}
 
 interface FetchAllChannelNewsGetResponseType extends BaseResponseType {
   data: { channelId?: PostDataType[] };
