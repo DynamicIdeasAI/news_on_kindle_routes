@@ -55,7 +55,6 @@ interface ChannelDeleteResponseType extends BaseResponseType {
 interface ChannelSubscriptionRouteType extends BaseRouteType {
   get: ChannelSubscriptionGetRequestType;
   post: ChannelSubscriptionPostRequestType;
-  put: ChannelSubscriptionPutRequestType;
   delete: ChannelSubscriptionDeleteRequestType;
 }
 
@@ -81,16 +80,8 @@ interface ChannelSubscriptionPostResponseType extends BaseResponseType {
   data: ChannelSubscriptionDataType;
 }
 
-interface ChannelSubscriptionPutRequestType extends BaseRequestType {
-  data: ChannelSubscriptionDataType;
-}
-
-interface ChannelSubscriptionPutResponseType extends BaseResponseType {
-  data: ChannelSubscriptionDataType;
-}
-
 interface ChannelSubscriptionDeleteRequestType extends BaseRequestType {
-  subscriptionIds: string[];
+  ids: string[];
 }
 
 interface ChannelSubscriptionDeleteResponseType extends BaseResponseType {}
@@ -186,8 +177,6 @@ export type {
   ChannelSubscriptionGetResponseType,
   ChannelSubscriptionPostRequestType,
   ChannelSubscriptionPostResponseType,
-  ChannelSubscriptionPutRequestType,
-  ChannelSubscriptionPutResponseType,
   ChannelSubscriptionDeleteRequestType,
   ChannelSubscriptionDeleteResponseType,
   ChannelUrlExistenceRouteType,
