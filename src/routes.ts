@@ -62,7 +62,7 @@ export default class ApiRoute {
         userId: ''
       }
     },
-    delete: { ids: [] }
+    delete: { userId: '', subscriptionIds: [] }
   };
   static ChannelUrlExistence: ChannelUrlExistenceRouteType = {
     path: '/check-channel-url-existence',

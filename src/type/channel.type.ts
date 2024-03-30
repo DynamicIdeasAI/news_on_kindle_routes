@@ -90,7 +90,8 @@ interface ChannelSubscriptionPutResponseType extends BaseResponseType {
 }
 
 interface ChannelSubscriptionDeleteRequestType extends BaseRequestType {
-  ids: string[];
+  userId: string;
+  subscriptionIds: string[];
 }
 
 interface ChannelSubscriptionDeleteResponseType extends BaseResponseType {}
