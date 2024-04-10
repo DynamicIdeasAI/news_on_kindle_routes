@@ -1,3 +1,4 @@
+import type { BookletRouteType } from './type/booklet.type';
 import type { CategoryRouteType } from './type/category.type';
 import type {
   ChannelNewsParserRouteType,
@@ -139,5 +140,9 @@ export default class ApiRoute {
         attachments: []
       }
     }
+  };
+  static Booklet: BookletRouteType = {
+    path: '/booklets',
+    post: {}
   };
 }
