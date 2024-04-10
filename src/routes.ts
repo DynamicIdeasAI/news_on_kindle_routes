@@ -132,9 +132,11 @@ export default class ApiRoute {
     path: '/emails',
     post: {
       data: {
-        fromEmail: '',
-        toUserId: '',
-        toUserKindleEmail: ''
+        from: '',
+        to: [],
+        subject: '',
+        html: '',
+        attachments: []
       }
     }
   };
