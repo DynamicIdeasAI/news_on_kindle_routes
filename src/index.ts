@@ -6,3 +6,4 @@ export * from './type/rss.type';
 export * from './type/fetch-channel-news.type';
 export * from './type/email.type';
 export * from './type/booklet.type';
+export * from './type/distribution.type';

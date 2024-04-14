@@ -8,6 +8,7 @@ import type {
   ChannelTotalAmountRouteType,
   ChannelUrlExistenceRouteType
 } from './type/channel.type';
+import { DistributeRouteType } from './type/distribution.type';
 import type { EmailRouteType } from './type/email.type';
 import type { FetchAllChannelNewsRouteType, FetchChannelNewsRouteType } from './type/fetch-channel-news.type';
 import type { ClearExpiredPostRouteType, PostRouteType } from './type/post.type';
@@ -143,6 +144,10 @@ export default class ApiRoute {
   };
   static Booklet: BookletRouteType = {
     path: '/booklets',
+    post: {}
+  };
+  static Distribution: DistributeRouteType = {
+    path: '/distributions',
     post: {}
   };
 }
