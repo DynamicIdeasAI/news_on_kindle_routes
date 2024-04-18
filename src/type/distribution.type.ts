@@ -6,6 +6,7 @@ interface DistributeRouteType extends BaseRouteType {
 
 interface DistributionPostRequestType extends BaseRequestType {
   hourIndex?: number;
+  userIds?: string[];
 }
 
 interface DistributionPostResponseType extends BaseResponseType {}
