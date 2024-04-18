@@ -5,7 +5,7 @@ interface BookletRouteType extends BaseRouteType {
 }
 
 interface BookletPostRequestType extends BaseRequestType {
-  hourIndex?: number;
+  userId: string;
 }
 
 interface BookletPostResponseType extends BaseResponseType {}

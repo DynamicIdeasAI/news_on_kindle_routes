@@ -143,7 +143,7 @@ export default class ApiRoute {
   };
   static Booklet: BookletRouteType = {
     path: '/booklets',
-    post: {}
+    post: { userId: '' }
   };
   static Distribution: DistributeRouteType = {
     path: '/distributions',
