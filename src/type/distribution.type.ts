@@ -5,7 +5,7 @@ interface DistributeRouteType extends BaseRouteType {
 }
 
 interface DistributionPostRequestType extends BaseRequestType {
-  hourIndex?: number;
+  utcHourIndex?: number;
   userIds?: string[];
 }
 
