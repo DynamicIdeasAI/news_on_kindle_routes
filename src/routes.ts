@@ -8,11 +8,12 @@ import type {
   ChannelTotalAmountRouteType,
   ChannelUrlExistenceRouteType
 } from './type/channel.type';
-import { DistributeRouteType } from './type/distribution.type';
+import type { DistributeRouteType } from './type/distribution.type';
 import type { EmailRouteType } from './type/email.type';
 import type { FetchAllChannelNewsRouteType, FetchChannelNewsRouteType } from './type/fetch-channel-news.type';
 import type { ClearExpiredPostRouteType, PostRouteType } from './type/post.type';
 import type { RssRouteType } from './type/rss.type';
+import type { WebpageRouteType } from './type/webpage.type';
 
 export default class ApiRoute {
   static Category: CategoryRouteType = {
@@ -148,5 +149,15 @@ export default class ApiRoute {
   static Distribution: DistributeRouteType = {
     path: '/distributions',
     post: {}
+  };
+  static Webpage: WebpageRouteType = {
+    path: 'webpages',
+    get: {},
+    post: {
+      webpage: {
+        url: '',
+        username: ''
+      }
+    }
   };
 }
