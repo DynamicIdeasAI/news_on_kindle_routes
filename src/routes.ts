@@ -151,11 +151,11 @@ export default class ApiRoute {
     post: {}
   };
   static Webpage: WebpageRouteType = {
-    path: 'webpages',
+    path: '/webpages',
     get: {},
     post: {
       webpage: {
-        url: '',
+        encodedUrl: '',
         username: ''
       }
     }
