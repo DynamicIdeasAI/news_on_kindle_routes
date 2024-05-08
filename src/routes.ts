@@ -13,7 +13,7 @@ import type { EmailRouteType } from './type/email.type';
 import type { FetchAllChannelNewsRouteType, FetchChannelNewsRouteType } from './type/fetch-channel-news.type';
 import type { ClearExpiredPostRouteType, PostRouteType } from './type/post.type';
 import type { RssRouteType } from './type/rss.type';
-import type { WebpageRouteType } from './type/webpage.type';
+import type { WebPageRouteType } from './type/web-page.type';
 
 export default class ApiRoute {
   static Category: CategoryRouteType = {
@@ -150,11 +150,11 @@ export default class ApiRoute {
     path: '/distributions',
     post: {}
   };
-  static Webpage: WebpageRouteType = {
-    path: '/webpages',
+  static WebPage: WebPageRouteType = {
+    path: '/web-pages',
     get: {},
     post: {
-      webpage: {
+      webPage: {
         encodedUrl: '',
         username: ''
       }
