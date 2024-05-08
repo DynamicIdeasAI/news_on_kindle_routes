@@ -1,5 +1,5 @@
 import { BaseRequestType, BaseResponseType, BaseRouteType } from '@dynamicideas/base-types';
-import { WebpageDataType } from '@dynamicideas/news-on-kindle-data-types';
+import { WebPageDataType } from '@dynamicideas/news-on-kindle-data-types';
 
 interface WebpageRouteType extends BaseRouteType {
   get: WebpageGetRequestType;
@@ -13,11 +13,11 @@ interface WebpageGetRequestType extends BaseRequestType {
 }
 
 interface WebpageGetResponseType extends BaseResponseType {
-  webpages: WebpageDataType[];
+  webpages: WebPageDataType[];
 }
 
 interface WebpagePostRequestType extends BaseRequestType {
-  webpage: WebpageDataType;
+  webpage: WebPageDataType;
 }
 
 interface WebpagePostResponseType extends BaseResponseType {}
