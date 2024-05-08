@@ -1,4 +1,4 @@
-import type { BookletRouteType } from './type/booklet.type';
+import type { NewspaperRouteType } from './type/newspaper.type';
 import type { CategoryRouteType } from './type/category.type';
 import type {
   ChannelNewsParserRouteType,
@@ -142,8 +142,8 @@ export default class ApiRoute {
       }
     }
   };
-  static Booklet: BookletRouteType = {
-    path: '/booklets',
+  static Newspaper: NewspaperRouteType = {
+    path: '/newspapers',
     post: { userId: '' }
   };
   static Distribution: DistributeRouteType = {
