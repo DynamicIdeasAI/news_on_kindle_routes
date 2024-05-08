@@ -8,3 +8,4 @@ export * from './type/email.type';
 export * from './type/newspaper.type';
 export * from './type/distribution.type';
 export * from './type/web-page.type';
+export * from './type/quota.type';

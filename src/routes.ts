@@ -14,6 +14,7 @@ import type { FetchAllChannelNewsRouteType, FetchChannelNewsRouteType } from './
 import type { ClearExpiredPostRouteType, PostRouteType } from './type/post.type';
 import type { RssRouteType } from './type/rss.type';
 import type { WebPageRouteType } from './type/web-page.type';
+import { QuotaRouteType } from './type/quota.type';
 
 export default class ApiRoute {
   static Category: CategoryRouteType = {
@@ -159,5 +160,9 @@ export default class ApiRoute {
         username: ''
       }
     }
+  };
+  static Quota: QuotaRouteType = {
+    path: '/quotas',
+    get: { usernames: [] }
   };
 }
