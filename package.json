@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@dynamicideas/base-types": "^0.8.17",
-    "@dynamicideas/news-on-kindle-data-types": "^0.8.37"
+    "@dynamicideas/news-on-kindle-data-types": "^0.8.38"
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
