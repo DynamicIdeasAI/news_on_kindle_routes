@@ -10,6 +10,7 @@ interface WebPageGetRequestType extends BaseRequestType {
   userIds?: string[];
   usernames?: string[];
   createdAfter?: Date;
+  createdBefore?: Date;
 }
 
 interface WebPageGetResponseType extends BaseResponseType {

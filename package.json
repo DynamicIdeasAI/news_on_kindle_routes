@@ -1,6 +1,6 @@
 {
   "name": "@dynamicideas/news-on-kindle-routes",
-  "version": "0.8.73",
+  "version": "0.8.74",
   "description": "API routes of News on Kindle.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
