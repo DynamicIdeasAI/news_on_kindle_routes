@@ -157,7 +157,9 @@ interface ChannelTotalAmountRouteType extends BaseRouteType {
   get: ChannelTotalAmountGetRequestType;
 }
 
-interface ChannelTotalAmountGetRequestType extends BaseRequestType {}
+interface ChannelTotalAmountGetRequestType extends BaseRequestType {
+  searchKeyword?: string;
+}
 
 interface ChannelTotalAmountGetResponseType extends BaseResponseType {
   data: { totalPublishedAmount: number; totalUnpublishedAmount: number; totalDeletedAmount: number };
