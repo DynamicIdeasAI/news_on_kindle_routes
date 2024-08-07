@@ -29,7 +29,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: git config user.email "XinwenCheng@Live.com"
+      - run: git config user.email "CaptMichaelDev@gmail.com"
       - run: git config user.name "Capt. Michael"
       - run: npm version patch --force
       - run: tsc --build --force
