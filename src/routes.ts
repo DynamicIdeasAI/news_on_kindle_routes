@@ -2,6 +2,7 @@ import type { NewspaperRouteType } from './type/newspaper.type';
 import type { CategoryRouteType } from './type/category.type';
 import type {
   ChannelNewsParserRouteType,
+  ChannelPopularityRouteType,
   ChannelRouteType,
   ChannelRssUrlExistenceRouteType,
   ChannelSubscriptionRouteType,
@@ -14,7 +15,7 @@ import type { FetchAllChannelNewsRouteType, FetchChannelNewsRouteType } from './
 import type { ClearExpiredPostRouteType, PostRouteType } from './type/post.type';
 import type { RssRouteType } from './type/rss.type';
 import type { WebPageRouteType } from './type/web-page.type';
-import { QuotaRouteType } from './type/quota.type';
+import type { QuotaRouteType } from './type/quota.type';
 
 export default class ApiRoute {
   static Category: CategoryRouteType = {
@@ -92,6 +93,10 @@ export default class ApiRoute {
   static ChannelTotalAmount: ChannelTotalAmountRouteType = {
     path: '/channel-total-amount',
     get: {}
+  };
+  static ChannelPopularity: ChannelPopularityRouteType = {
+    path: '/channel-popularity',
+    get: { channelId: '' }
   };
   static Post: PostRouteType = {
     path: '/posts',
