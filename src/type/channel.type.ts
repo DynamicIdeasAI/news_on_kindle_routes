@@ -174,7 +174,7 @@ interface ChannelPopularityGetRequestType extends BaseRequestType {
 }
 
 interface ChannelPopularityGetResponseType extends BaseResponseType {
-  data: { totalSubscriptionAmount: number };
+  data: { isPopular: boolean };
 }
 
 export type {
