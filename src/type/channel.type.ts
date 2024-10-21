@@ -2,6 +2,7 @@ import type { BaseRouteType, BaseRequestType, BaseResponseType } from '@dynamici
 import type {
   ChannelDataType,
   ChannelNewsParserDataType,
+  ChannelReportDataType,
   ChannelSubscriptionDataType
 } from '@dynamicideas/news-on-kindle-data-types';
 
@@ -177,6 +178,48 @@ interface ChannelPopularityGetResponseType extends BaseResponseType {
   data: { isPopular: boolean };
 }
 
+interface ChannelReportRouteType extends BaseRouteType {
+  get: ChannelReportGetRequestType;
+  post: ChannelReportPostRequestType;
+  put: ChannelReportPutRequestType;
+  delete: ChannelReportDeleteRequestType;
+}
+
+interface ChannelReportGetRequestType extends BaseRequestType {
+  ids?: string[];
+  channelId?: string;
+  pageIndex: number;
+  pageSize: number;
+}
+
+interface ChannelReportGetResponseType extends BaseResponseType {
+  data: ChannelReportDataType[];
+}
+
+interface ChannelReportPostRequestType extends BaseRequestType {
+  data: ChannelReportDataType;
+}
+
+interface ChannelReportPostResponseType extends BaseResponseType {
+  data?: ChannelReportDataType;
+}
+
+interface ChannelReportPutRequestType extends BaseRequestType {
+  data: ChannelReportDataType;
+}
+
+interface ChannelReportPutResponseType extends BaseResponseType {
+  data: ChannelReportDataType;
+}
+
+interface ChannelReportDeleteRequestType extends BaseRequestType {
+  ids: string[];
+}
+
+interface ChannelReportDeleteResponseType extends BaseResponseType {
+  ids: string[];
+}
+
 export type {
   ChannelRouteType,
   ChannelGetRequestType,
@@ -214,5 +257,14 @@ export type {
   ChannelTotalAmountGetResponseType,
   ChannelPopularityRouteType,
   ChannelPopularityGetRequestType,
-  ChannelPopularityGetResponseType
+  ChannelPopularityGetResponseType,
+  ChannelReportRouteType,
+  ChannelReportGetRequestType,
+  ChannelReportGetResponseType,
+  ChannelReportPostRequestType,
+  ChannelReportPostResponseType,
+  ChannelReportPutRequestType,
+  ChannelReportPutResponseType,
+  ChannelReportDeleteRequestType,
+  ChannelReportDeleteResponseType
 };
