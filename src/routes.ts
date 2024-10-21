@@ -3,6 +3,7 @@ import type { CategoryRouteType } from './type/category.type';
 import type {
   ChannelNewsParserRouteType,
   ChannelPopularityRouteType,
+  ChannelReportRouteType,
   ChannelRouteType,
   ChannelRssUrlExistenceRouteType,
   ChannelSubscriptionRouteType,
@@ -60,6 +61,21 @@ export default class ApiRoute {
         channelId: '',
         userId: ''
       }
+    },
+    delete: { ids: [] }
+  };
+  static ChannelReport: ChannelReportRouteType = {
+    path: '/channel-reports',
+    get: { pageIndex: 0, pageSize: 20 },
+    post: {
+      data: {
+        channelId: '',
+        userId: '',
+        comment: ''
+      }
+    },
+    put: {
+      data: { id: '', channelId: '', userId: '', comment: '' }
     },
     delete: { ids: [] }
   };
