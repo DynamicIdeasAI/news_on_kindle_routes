@@ -19,6 +19,7 @@ interface WebPageGetResponseType extends BaseResponseType {
 
 interface WebPagePostRequestType extends BaseRequestType {
   webPage: WebPageDataType;
+  summarizeByAI?: boolean;
 }
 
 interface WebPagePostResponseType extends BaseResponseType {}
