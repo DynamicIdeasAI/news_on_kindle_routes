@@ -2,7 +2,6 @@ import type { NewspaperRouteType } from './type/newspaper.type';
 import type { CategoryRouteType } from './type/category.type';
 import type {
   ChannelNewsParserRouteType,
-  ChannelPopularityRouteType,
   ChannelRouteType,
   ChannelRssUrlExistenceRouteType,
   ChannelSubscriptionRouteType,
@@ -33,6 +32,7 @@ export default class ApiRoute {
     },
     delete: { ids: [] }
   };
+
   static Channel: ChannelRouteType = {
     path: '/channels',
     get: { pageIndex: 0, pageSize: 20 },
@@ -52,6 +52,7 @@ export default class ApiRoute {
     },
     delete: { ids: [] }
   };
+
   static ChannelSubscription: ChannelSubscriptionRouteType = {
     path: '/channel-subscriptions',
     get: { pageIndex: 0, pageSize: 20, userId: '' },
@@ -63,14 +64,17 @@ export default class ApiRoute {
     },
     delete: { ids: [] }
   };
+
   static ChannelUrlExistence: ChannelUrlExistenceRouteType = {
     path: '/check-channel-url-existence',
     get: { url: '' }
   };
+
   static ChannelRssUrlExistence: ChannelRssUrlExistenceRouteType = {
     path: '/check-channel-rss-url-existence',
     get: { rssUrl: '' }
   };
+
   static ChannelNewsParser: ChannelNewsParserRouteType = {
     path: '/channel-news-parsers',
     get: { pageIndex: 0, pageSize: 20 },
@@ -90,14 +94,12 @@ export default class ApiRoute {
     },
     delete: { ids: [] }
   };
+
   static ChannelTotalAmount: ChannelTotalAmountRouteType = {
     path: '/channel-total-amount',
     get: {}
   };
-  static ChannelPopularity: ChannelPopularityRouteType = {
-    path: '/channel-popularity',
-    get: { channelId: '' }
-  };
+
   static Post: PostRouteType = {
     path: '/posts',
     get: { pageIndex: 0, pageSize: 20 },
@@ -121,22 +123,27 @@ export default class ApiRoute {
     },
     delete: { ids: [] }
   };
+
   static ClearExpiredPost: ClearExpiredPostRouteType = {
     path: '/clear-expired-posts',
     delete: {}
   };
+
   static Rss: RssRouteType = {
     path: '/rss',
     get: { rssUrl: '' }
   };
+
   static FetchChannelNews: FetchChannelNewsRouteType = {
     path: '/fetch-channel-news',
     get: { channelId: '' }
   };
+
   static FetchAllChannelNews: FetchAllChannelNewsRouteType = {
     path: '/fetch-all-channel-news',
     get: {}
   };
+
   static Email: EmailRouteType = {
     path: '/emails',
     post: {
@@ -148,14 +155,17 @@ export default class ApiRoute {
       }
     }
   };
+
   static Newspaper: NewspaperRouteType = {
     path: '/newspapers',
     post: { userId: '' }
   };
+
   static Distribution: DistributeRouteType = {
     path: '/distributions',
     post: {}
   };
+
   static WebPage: WebPageRouteType = {
     path: '/web-pages',
     get: {},
@@ -166,6 +176,7 @@ export default class ApiRoute {
       }
     }
   };
+
   static Quota: QuotaRouteType = {
     path: '/quotas',
     get: { usernames: [] }

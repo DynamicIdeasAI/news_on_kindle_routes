@@ -165,18 +165,6 @@ interface ChannelTotalAmountGetResponseType extends BaseResponseType {
   data: { totalPublishedAmount: number; totalUnpublishedAmount: number; totalDeletedAmount: number };
 }
 
-interface ChannelPopularityRouteType extends BaseRouteType {
-  get: ChannelPopularityGetRequestType;
-}
-
-interface ChannelPopularityGetRequestType extends BaseRequestType {
-  channelId: string;
-}
-
-interface ChannelPopularityGetResponseType extends BaseResponseType {
-  data: { isPopular: boolean };
-}
-
 export type {
   ChannelRouteType,
   ChannelGetRequestType,
@@ -211,8 +199,5 @@ export type {
   ChannelNewsParserDeleteResponseType,
   ChannelTotalAmountRouteType,
   ChannelTotalAmountGetRequestType,
-  ChannelTotalAmountGetResponseType,
-  ChannelPopularityRouteType,
-  ChannelPopularityGetRequestType,
-  ChannelPopularityGetResponseType
+  ChannelTotalAmountGetResponseType
 };
