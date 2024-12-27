@@ -16,7 +16,7 @@ import type { RssRouteType } from './type/rss.type';
 import type { WebPageRouteType } from './type/web-page.type';
 import type { QuotaRouteType } from './type/quota.type';
 
-export default class ApiRoute {
+export class ApiRoute {
   static Category: CategoryRouteType = {
     path: '/categories',
     get: { pageIndex: 0, pageSize: 200 },

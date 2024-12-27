@@ -6,7 +6,7 @@ name: Node.js Package
 on:
   push:
     branches:
-      - main
+      - release
 
 jobs:
   build:
@@ -35,4 +35,4 @@ jobs:
       - run: tsc --build --force
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

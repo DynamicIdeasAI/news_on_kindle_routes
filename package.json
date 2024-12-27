@@ -1,6 +1,6 @@
 {
   "name": "@dynamicideas/news-on-kindle-routes",
-  "version": "0.8.95",
+  "version": "0.8.96",
   "description": "API routes of News on Kindle.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -48,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "@dynamicideas/base-types": "^0.8.26",
+    "@dynamicideas/base-types": "^0.8.27",
     "@dynamicideas/news-on-kindle-data-types": "^0.8.59"
   },
   "devDependencies": {
