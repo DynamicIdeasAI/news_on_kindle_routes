@@ -1,6 +1,6 @@
 {
   "name": "@dynamicideas/news-on-kindle-routes",
-  "version": "0.8.96",
+  "version": "0.8.97",
   "description": "API routes of News on Kindle.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -48,8 +48,8 @@
     ]
   },
   "dependencies": {
-    "@dynamicideas/base-types": "^0.8.27",
-    "@dynamicideas/news-on-kindle-data-types": "^0.8.59"
+    "@dynamicideas/base-types": "^0.8.29",
+    "@dynamicideas/news-on-kindle-data-types": "^0.8.60"
   },
   "devDependencies": {
     "@commitlint/cli": "19.6.1",
@@ -61,7 +61,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.31.0",
     "husky": "9.0.11",
-    "lint-staged": "15.2.11",
+    "lint-staged": "15.3.0",
     "pinst": "3.0.0",
     "tslint": "6.1.3",
     "typescript": "5.7.2"
